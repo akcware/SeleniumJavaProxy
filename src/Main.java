@@ -18,11 +18,13 @@ public class Main {
 
         FirefoxDriver driver = new FirefoxDriver(options); // Eklediğimiz ayarları firefox'a göm.
 
+
         /*
 
         Eğer proxyi güncellemek istiyorsanız driver'ı yeniden oluşturmak zorundasınız. Örneğin buraya kadar geldik diyelim.
         Tekrardan oluşturacağız proxyi:
 
+        driver.quit();
         proxy.setHttpProxy("proxy_ip:port");
         options.setCapability("proxy", proxy);
         driver = new FirefoxDriver(options);
